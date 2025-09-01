@@ -22,6 +22,11 @@ class Internet
 public class CustomException {
 	public static void main(String[] args) {
 		Internet i =new Internet();
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		try
 		{
 			i.Coonetion(true);
